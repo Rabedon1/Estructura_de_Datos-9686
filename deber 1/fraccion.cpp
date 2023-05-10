@@ -7,99 +7,47 @@
 
 #include "fraccion.h"
 
-////////////////////////////////////////////////////////////////////////
-// Name:       fraccion::fraccion(fraccion num, fraccion den)
-// Purpose:    Implementation of fraccion::fraccion()
-// Parameters:
-// - num
-// - den
-// Return:     
-////////////////////////////////////////////////////////////////////////
-
 fraccion::fraccion(fraccion num, fraccion den)
 {
-   // TODO : implement
+   this->numerador=numerador;
+   this->denominador=denominador;
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       fraccion::fraccion()
-// Purpose:    Implementation of fraccion::fraccion()
-// Return:     
-////////////////////////////////////////////////////////////////////////
 
 fraccion::fraccion()
 {
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       fraccion::~fraccion()
-// Purpose:    Implementation of fraccion::~fraccion()
-// Return:     
-////////////////////////////////////////////////////////////////////////
 
 fraccion::~fraccion()
 {
    // TODO : implement
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       fraccion::getNumerador()
-// Purpose:    Implementation of fraccion::getNumerador()
-// Return:     float
-////////////////////////////////////////////////////////////////////////
-
 float fraccion::getNumerador(void)
 {
    return numerador;
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       fraccion::setNumerador(float newNumerador)
-// Purpose:    Implementation of fraccion::setNumerador()
-// Parameters:
-// - newNumerador
-// Return:     void
-////////////////////////////////////////////////////////////////////////
 
 void fraccion::setNumerador(float newNumerador)
 {
    numerador = newNumerador;
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       fraccion::getDenominador()
-// Purpose:    Implementation of fraccion::getDenominador()
-// Return:     float
-////////////////////////////////////////////////////////////////////////
-
 float fraccion::getDenominador(void)
 {
    return denominador;
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       fraccion::setDenominador(float newDenominador)
-// Purpose:    Implementation of fraccion::setDenominador()
-// Parameters:
-// - newDenominador
-// Return:     void
-////////////////////////////////////////////////////////////////////////
 
 void fraccion::setDenominador(float newDenominador)
 {
    denominador = newDenominador;
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       fraccion::proceso(fraccion obj1, fraccion obj2)
-// Purpose:    Implementation of fraccion::proceso()
-// Parameters:
-// - obj1
-// - obj2
-// Return:     fraccion
-////////////////////////////////////////////////////////////////////////
-
 fraccion fraccion::proceso(fraccion obj1, fraccion obj2)
 {
-   // TODO : implement
+	fraccion resultado1 = obj1.getNumerador() * obj2.getDenominador();
+	fraccion resultado2 = obj2.getNumerador() * obj1.getDenominador();
+	flofraccionat num = resultado1 + resultado2;
+	fraccion den = obj1.getDenominador() + obj2.getDenominador();
+	return fraccion;
 }

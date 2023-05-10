@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Fraccion.cpp"
-
 int main(int argc, char** argv){
 
    int a=18,b=3;
@@ -13,9 +12,7 @@ int main(int argc, char** argv){
    obj1->imprimir(*obj1);
    obj1->imprimir(*obj2);
    obj1->imprimir(*obj3);
-
-  
+   cin.get();
    
-
     return 0;
 }

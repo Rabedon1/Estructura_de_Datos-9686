@@ -15,14 +15,13 @@ using namespace std;
 
 int main(int argc, char** argv){
 
-<<<<<<< HEAD
-   float a=18,b=3;
-   Fraccion *obj1=new Fraccion(8,7);
+  float a=18,b=3;
+  /* Fraccion *obj1=new Fraccion(8,7);
    Fraccion *obj2=new Fraccion(15,5);
    Fraccion *obj3=new Fraccion(0,0);
-=======
+*/
    float num1, den1, num2, den2;
->>>>>>> 35ae79580bf5285dcda34129595b6c34e28c7354
+
 
    cout << "Ingrese el numerador y el denominador de la primera fraccion: ";
    cin >> num1 >> den1;
@@ -39,9 +38,7 @@ int main(int argc, char** argv){
    obj1->imprimir(*obj2);
    obj1->imprimir(*obj3);
 
-   delete obj1;
-   delete obj2;
-   delete obj3;
+   
 
    cin.get();
    return 0;

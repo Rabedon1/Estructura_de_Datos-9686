@@ -1,18 +1,30 @@
 #include <iostream>
 #include "Fraccion.cpp"
+using namespace std;
+
 int main(int argc, char** argv){
 
-   int a=18,b=3;
-   Fraccion *obj1=new Fraccion(a,b);
-   Fraccion *obj2=new Fraccion(15,5);
-   Fraccion *obj3=new Fraccion(0,0);
+   float num1, den1, num2, den2;
 
+   cout << "Ingrese el numerador y el denominador de la primera fraccion: ";
+   cin >> num1 >> den1;
 
-   obj3->proceso_1(*obj1,*obj2);
+   cout << "Ingrese el numerador y el denominador de la segunda fraccion: ";
+   cin >> num2 >> den2;
+
+   Fraccion *obj1 = new Fraccion(num1, den1);
+   Fraccion *obj2 = new Fraccion(num2, den2);
+   Fraccion *obj3 = new Fraccion();
+
+   obj3->proceso_1(*obj1, *obj2);
    obj1->imprimir(*obj1);
    obj1->imprimir(*obj2);
    obj1->imprimir(*obj3);
+
+   delete obj1;
+   delete obj2;
+   delete obj3;
+
    cin.get();
-   
-    return 0;
+   return 0;
 }

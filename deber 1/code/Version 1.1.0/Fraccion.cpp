@@ -1,5 +1,5 @@
 /******************************************************************************************
- *              Universidad de las fuerzas armadas ESPE
+ *              Universidad de las Fuerzas Armadas ESPE
  * Module:  Fraccion.cpp
  * Materia: Estructura de datos
  * Integrantes: Alexander Bedon, Jaime Reyes, Raúl Silva
@@ -76,7 +76,7 @@ Fraccion Fraccion::proceso_1(Fraccion obj1, Fraccion obj2)
 {
    this -> setNumerador(((obj1.getNumerador()*obj2.getDenominador())+(obj2.getNumerador()*obj1.getDenominador())));
    this -> setDenominador(((obj1.getDenominador()+obj2.getDenominador())));
-   return *this;
+   return *this;  //devuelve una referencia al objeto
 }
 
 

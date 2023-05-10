@@ -1,5 +1,5 @@
 /*************************************************************************************************
- *              Universidad de las fuerzas armadas ESPE
+ *              Universidad de las Fuerzas Armadas ESPE
  * Module:  main.cpp
  * Materia: Estructura de datos
  * Integrantes: Alexander Bedon, Jaime Reyes, Raúl Silva
@@ -14,9 +14,9 @@
 using namespace std;
 
 int main(int argc, char** argv){
-
+/*
   float a=18,b=3;
-  /* Fraccion *obj1=new Fraccion(8,7);
+   Fraccion *obj1=new Fraccion(8,7);
    Fraccion *obj2=new Fraccion(15,5);
    Fraccion *obj3=new Fraccion(0,0);
 */
@@ -39,7 +39,6 @@ int main(int argc, char** argv){
    obj1->imprimir(*obj3);
 
    
-
-   cin.get();
+   system("pause");
    return 0;
 }

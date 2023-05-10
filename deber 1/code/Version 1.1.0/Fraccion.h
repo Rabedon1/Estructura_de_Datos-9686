@@ -1,5 +1,5 @@
 /*************************************************************************************************
- *              Universidad de las fuerzas armadas ESPE
+ *              Universidad de las Fuerzas Armadas ESPE
  * Module:  Fraccion.h
  * Materia: Estructura de datos
  * Integrantes: Alexander Bedon, Jaime Reyes, Raúl Silva

@@ -3,8 +3,8 @@
 
 int main(int argc, char** argv){
 
-   int a=18,b=3;
-   Fraccion *obj1=new Fraccion(a,b);
+   float a=18,b=3;
+   Fraccion *obj1=new Fraccion(8,7);
    Fraccion *obj2=new Fraccion(15,5);
    Fraccion *obj3=new Fraccion(0,0);
 

@@ -2,16 +2,17 @@
 
 
 template <typename T>
-void Operacion<T>::Operacion() {
-    std::cout << "Numeros: " << num1 << "/" << den1<< " y " << num2 << "/" << den2 << std::endl;
+void Operacion<T>::calculo(){
+    std::cout <<"Numeros: " << numerador1 << "/" << denominador1<< " y " << numerador2 << "/" << denominador2 <<std::endl;
+    std::cout <<"resultado (n1*d2+n2*d1)/(d1+d2): "<<numCalculo()<<"/"<<denCalculo()<<std::endl;
     
 }
 
 template <typename T>
-T Operacion<T>::numCalculo() { return ((num1 * den2)+(num2 * den1)); }
+T Operacion<T>::numCalculo() { return ((numerador1 * denominador2)+(numerador2 * denominador1)); }
 
 template <typename T>
-T Calculadora<T>::denCalculo() { return den1 + den2; }
+T Operacion<T>::denCalculo() { return denominador1 + denominador2; }
 
 
 

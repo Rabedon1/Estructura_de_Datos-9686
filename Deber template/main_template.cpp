@@ -2,29 +2,27 @@
 #include <stdlib.h>
 #include "fraccion_template.cpp"
 
-using namespace std;
+
 
 int main() {
 	
 	float a, b, c, d;
-	cout<<"Ingrese el primer numerador: ";
-	cin>>a;
-	cout<<"Ingrese el primer denominador: ";
-	cin>>b;
-	cout<<"Ingrese el segundo numerador: ";
-	cin>>c;
-	cout<<"Ingrese el segundo denominador: ";
-	cin>>d;
+	std::cout<<"Ingrese el primer numerador: ";
+	std::cin>>a;
+	std::cout<<"Ingrese el primer denominador: ";
+	std::cin>>b;
+	std::cout<<"Ingrese el segundo numerador: ";
+	std::cin>>c;
+	std::cout<<"Ingrese el segundo denominador: ";
+	std::cin>>d;
 	
-	Operacion<float> numCalculo(a,b);
-    Operacion<float> denCalculo(c,d);
 
-    cout<<"\nOperaciones enteras\n";
-    intCalc.operaciones();
+    Operacion<float> floatCalcu(a,b,c,d);
 
-    cout<<"\nOperaciones flotante";
-    floatCalc.operaciones();
 
+    floatCalcu.calculo();
+
+   
     system("pause");
 
  

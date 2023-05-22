@@ -40,7 +40,7 @@ void Operaciones::imprimir(){
 	}
 }
 
-/*
+
 int **Operaciones::generar(){
 	srand(time(NULL));
 	int **matriz;
@@ -72,4 +72,3 @@ void Operaciones::procesarMulti(){
 		}
 	}
 }
-*/

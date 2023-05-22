@@ -19,11 +19,11 @@ void iniciar(int  dim){
 	operaciones1.segmentar();
 	operaciones1.encerar();
 	operaciones1.imprimir();
-	/*
+	
 	m1=operaciones.generar();
 	m2=operaciones.generar();
 	operaciones.imprimir(m1);
-	operaciones.imprimir(m2);*/
+	operaciones.imprimir(m2);
 }
 int main(int argc, char** argv) {
 	int dim;

@@ -9,8 +9,8 @@
  *******************************************************************************/ 
 
 #include <iostream>
-#include "Operacion.h"
-#include "Dato.h"
+#include "Operacion.cpp"
+#include "Dato.cpp"
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 

@@ -1,11 +1,10 @@
-/*
-	UFA-ESPE
-	Alumnos: Ricardo Rivadeneira, Sebastian Rivera.
-	Fecha de creación: 12/11/2022
-	Fecha de modificación: 15/11/2022
-	Enunciado: Lista Simple
-	Nivel.- 3   NRC: 7999
-*/
+/*******************************************************************************
+ * UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
+ * Nombres: Roberto Bedon, Jaime Reyes, Raul Silva.
+ * Fecha de creacion: 29/05/23 20:32
+ * Fecha de modificacion: 06/06/23 13:30
+ * Tema: Listas Simples 
+ *******************************************************************************/ 
 
 #ifndef CNODO_H
 #define CNODO_H

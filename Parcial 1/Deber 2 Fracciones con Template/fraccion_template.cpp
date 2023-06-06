@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
+ * Nombres: Roberto Bedon, Jaime Reyes, Raul Silva.
+ * Fecha de creacion: 13/05/23 10:32
+ * Fecha de modificacion: 29/05/23 13:30
+ * Tema: Operacion de fracciones con template
+ *******************************************************************************/ 
 #include "fraccion_template.h"
 
 

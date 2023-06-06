@@ -15,15 +15,15 @@ int main(int argc, char** argv) {
 	float fnum1, fnum2;
 	
 	std::cout << "Objeto 1 \nIngresar el primer decimal: " << std::endl;
-	fnum1 = Dato::ingresarFloat();
+	fnum1 = Dato::ingresosFloat();
 	std::cout << "Ingresar el segundo decimal: " << std::endl;
-	fnum2 = Dato::ingresarFloat();
+	fnum2 = Dato::ingresosFloat();
 	Operacion op1(fnum1, fnum2);
 	
 	std::cout << "Objeto 2 \nIngresar el primer decimal: " << std::endl;
-	fnum1 = Dato::ingresarFloat();
+	fnum1 = Dato::ingresosFloat();
 	std::cout << "Ingresar el segundo decimal: " << std::endl;
-	fnum2 = Dato::ingresarFloat();
+	fnum2 = Dato::ingresosFloat();
 	Operacion op2(fnum1, fnum2);
 	
 	//Uso del operador sobrecargado <<

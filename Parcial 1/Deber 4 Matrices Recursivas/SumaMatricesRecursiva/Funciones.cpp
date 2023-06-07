@@ -61,6 +61,7 @@ void Funciones::resultado(){
 	}
 }
 
+
 Funciones::~Funciones(){
 	
 }
@@ -72,19 +73,26 @@ void Funciones::sumaRecursivaMatrices ( int **mat1, int **mat2, int **matR, int 
 		sumaRecursivaMatrices( mat1,mat2,matR,f,c-1);
 	}
 }
-void Funciones::multiplicacionRecursivaMatrices(int **mat1, int **mat2, int **matR, int f, int c, int k) {
-    if (f >= 0) {
-        if (c >= 0) {
-            if (k >= 0) {
-                *(*(matR + f) + c) += *(*(mat1 + f) + k) * *(*(mat2 + k) + c);
-                multiplicacionRecursivaMatrices(mat1, mat2, matR, f, c, k - 1);
-            }
-            multiplicacionRecursivaMatrices(mat1, mat2, matR, f, c - 1, MAX - 1);
-        }
-        multiplicacionRecursivaMatrices(mat1, mat2, matR, f - 1, MAX - 1, MAX - 1);
-    }
+void Funciones::multiplicacionRecursivaMatrizA(int **mat1, int **mat2, int **matR, int f){
+    if (f<3)
+       {
+           multiplicacionRecursivaMatrizB(mat1,mat2,matR,f,0);
+           multiplicacionRecursivaMatrizA(mat1,mat2,matR,f+1);
+       }
 }
+void Funciones::multiplicacionRecursivaMatrizB(int** mat1,int** mat2,int** matR, int i, int j){
+ 	if(j<3){
+ 			multiplicacionRecursiva(mat1,mat2,matR,i,j,0);
+           	multiplicacionRecursivaMatrizB(mat1,mat2,matR,i,j+1);
+	 }
+ }
 
+void Funciones::multiplicacionRecursiva(int** mat1,int** mat2,int** matR,int i,int j,int k){
+	if(k<3){
+	(*(*(matR+i)+j)) +=(*(*(mat1+i)+k)) * (*(*(mat2+k)+j)); //	C[i][j]+=A[i][k]*B[k][j];	
+	multiplicacionRecursiva(mat1,mat2,matR,i,j,k+1);
+	}
+}
 
 //GETTERS
 int** Funciones::getMat1(){

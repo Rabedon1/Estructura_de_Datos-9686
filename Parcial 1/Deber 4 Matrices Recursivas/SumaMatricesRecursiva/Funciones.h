@@ -12,17 +12,21 @@ private:
 	int ** mat2;
 	int ** matR;
 public:
+
 	void sumaRecursivaMatrices( int **, int **, int **, int, int);
-    void multiplicacionRecursivaMatrices(int **mat1, int **mat2, int **matR, int f1, int c1, int c2);
-    Funciones();
+	void multiplicacionRecursivaMatrizA(int **, int **, int **, int);
+	void multiplicacionRecursivaMatrizB(int** ,int** ,int** , int , int );
+	void multiplicacionRecursiva(int** ,int** ,int** ,int ,int ,int );
+	Funciones();
     ~Funciones();
     void encerar();
+  
     void llenarRandom();
     void imprimirMatrices();
     void resultado();
-    int** getMat1();
-    int** getMat2();
-    int** getMatR();
-};
 
+    int** getMat1(); 
+    int** getMatR();
+    int** getMat2();
+};                  
 

@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1686098287 source:c:\users\nayro\documents\registrosm\auto.cpp
+	"Auto.h"
+
+1686098310 c:\users\nayro\documents\registrosm\auto.h
+	<string>
+
+1686098007 source:c:\users\nayro\documents\registrosm\main.cpp
+	"Menu.h"
+
+1686106378 c:\users\nayro\documents\registrosm\menu.h
+	"RegistroVehicular.h"
+
+1686105755 c:\users\nayro\documents\registrosm\registrovehicular.h
+	"Nodo.h"
+
+1686105745 c:\users\nayro\documents\registrosm\nodo.h
+	"Persona.h"
+	"Auto.h"
+
+1686106125 c:\users\nayro\documents\registrosm\persona.h
+	<string>
+
+1686105751 source:c:\users\nayro\documents\registrosm\nodo.cpp
+	"Nodo.h"
+
+1686106054 source:c:\users\nayro\documents\registrosm\persona.cpp
+	"Persona.h"
+
+1686105827 source:c:\users\nayro\documents\registrosm\registrovehicular.cpp
+	"RegistroVehicular.h"
+	<iostream>
+
+1669699158 source:c:\users\nayro\documents\registrosm\input.cpp
+	"Input.h"
+	<iostream>
+	<conio.h>
+
+1669699124 c:\users\nayro\documents\registrosm\input.h
+	<string>
+
+1686105922 source:c:\users\nayro\documents\registrosm\menu.cpp
+	"Menu.h"
+	<iostream>
+	"Input.h"
+
+1686106054 c:\users\nayro\documents\registrosm\persona.cpp
+	"Persona.h"
+

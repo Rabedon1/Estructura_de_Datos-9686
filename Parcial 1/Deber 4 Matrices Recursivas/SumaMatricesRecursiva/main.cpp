@@ -9,7 +9,8 @@ int main(int argc, char** argv) {
 	f.imprimirMatrices();
 	f.sumaRecursivaMatrices(f.getMat1(),f.getMat2(),f.getMatR(), 2, 2);
 	std::cout<<endl;
-	std::cout<<"El resultado de la suma es:"<<endl;
+	std::cout<<"Los resultados son:"<<endl;
+	std::cout<<"suma: "<<endl;
 	f.resultado();
 	
 	                    
@@ -17,7 +18,8 @@ int main(int argc, char** argv) {
 	//Realizamos el calculo
 	int i = 0;
 	f.multiplicacionRecursivaMatrizA(f.getMat1(),f.getMat2(),f.getMatR(),i);
-	cout<<endl;         
+	std::cout<<endl;         
+	std::cout<<"mutiplicacion: "<<endl;
 	                                                   
 	//imprimimos la matriz resultante	
 	f.resultado();
